@@ -1,0 +1,161 @@
+body{
+    background-color: #489AF6;
+    color: white;
+}
+
+button:focus{
+    box-shadow: none!important;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main section{
+    background-color: rgb(10, 15, 47);
+    width: 50%; 
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px rgb(56, 56, 56, 1);
+}
+
+main section h1{
+    margin: 0px 0px 20px 0px;
+}
+
+main section .result-conteiner{
+    background-color: rgb(30, 34, 63);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    margin: 0px 0px 20px 0px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+main section .result-conteiner .result{
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+main section .result-conteiner .btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    color: white;
+    padding: 2px;
+}
+
+main section .result-conteiner .btn i{
+    font-size: 20px;
+    transition: font-size 0.4s;
+}
+
+main section .result-conteiner .btn i:hover{
+    font-size: 30px;
+}
+
+main section .title{
+    font-size: 12px;
+    display: inline-block;
+    margin: 0px 0px 5px 10px;
+    color: rgb(83, 86, 108);
+}
+
+main section .lengt-value{
+    color: white;
+}
+
+main section .range{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 34, 63);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+} 
+
+main section .range .form-control-range{
+    width: 90%;
+}
+
+input[type="range" i] {
+    height: 3px;
+}
+
+main section .form-check{
+    background-color: rgb(30, 34, 63);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 25px;
+    margin: 0px 0px 15px;
+}
+
+main section .form-check .form-check-input {
+    margin: 0px;
+    float: none;
+    width: 45px;
+    height: 25px;
+}
+
+main section .form-check .form-check-input:focus {
+    box-shadow: none;
+}
+
+main section .btn-secondary{
+    border: none;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 15px;
+    margin: 15px 0px;
+    background-color: #7fcec5;
+    background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+
+}
+
+main section .btn-secondary:hover{
+    background-color: #29539b;
+    background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+}
+
+main section .btn-secondary:active{
+    margin: 20px 0px 10px;
+}
+
+
+/* respons */
+@media screen and (max-width:1024px){
+    main section{
+        width: 90%;
+    }
+
+    main section h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px){
+    main section{
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+
+/* respons */
