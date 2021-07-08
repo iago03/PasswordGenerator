@@ -92,8 +92,25 @@ main section .range .form-control-range{
     width: 90%;
 }
 
-input[type="range" i] {
-    height: 3px;
+.form-control-range {
+    -webkit-appearance:none;
+    appearance:none;
+    margin:5px;
+    height:15px;
+    outline:none;
+    background:#555773;
+    border-radius:12px;   
+    overflow: hidden;
+}
+.form-control-range::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance:none;
+    width:15px;
+    height:15px;
+    background:#FFFFFF;
+    box-shadow: -100vw 0 0 calc(100vw - 12px) #0d6efd;
+    cursor:pointer;
+    border-radius: 50%; 
 }
 
 main section .form-check{
